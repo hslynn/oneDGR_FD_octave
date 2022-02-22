@@ -1,5 +1,4 @@
-Globals1D;
-GlobalsGR;
+Globals;
 
 g00_exact = -(1-2.*M./x);
 g01_exact = 2.*M./x;
@@ -22,9 +21,9 @@ Phi01 = Phi01_exact;
 Phi11 = Phi11_exact;
 
 H0 = 2.*M./power(x,2);
-H1 = 2.*(M+0)./power(x,2); %+ 2./x;
+H1 = 2.*(M+0)./power(x,2) + 2./x;
 
 deriH00 = 0.*x;
 deriH01 = 0.*x;
 deriH10 = -4.*M./power(x,3);
-deriH11 = -2.*(0+2.*M)./power(x,3); %- 2./(x.*x);
+deriH11 = -2.*(0+2.*M)./power(x,3) - 2./(x.*x);
